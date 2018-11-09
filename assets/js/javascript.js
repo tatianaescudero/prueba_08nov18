@@ -22,6 +22,10 @@ $(function (){
 		}
 	});
 
+	$('.eliminar').click(function(){
+ 	$(this).parent().parent().parent().parent().parent().remove();
+	});
+
 
 	$('#image').on('change', function(event) {
 		var fileName = $(this).val();
