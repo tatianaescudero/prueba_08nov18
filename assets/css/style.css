@@ -1,0 +1,330 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1,h2,h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header__main {
+  margin: 50px auto;
+  max-width: 512px;
+}
+
+.header__title {
+  color: gray;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__search {
+  border-bottom: 1px solid #999;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.form__input {
+  background-color: transparent;
+  border: none;
+  padding: 10px 2%;
+  width: 96%;
+}
+
+.form__submit {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  font-family: 'fontawesome';
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.header__description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cards {
+  margin: 50px auto;
+  padding: 0;
+  max-width: 530px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #c3c3c3, 0 14px 10px rgba(0,0,0,0.25);
+  list-style: none;
+  margin-bottom: 100px;
+  width: inherit;
+}
+
+.card__highlight {
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.card__content {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  min-height: 130px;
+  position: relative;
+  transition: min-height .5s;
+}
+
+.card__profile-container {
+	left: 20px;
+    position: absolute;
+    top: -65px;
+    transition: all .25s ease-in-out;
+    width: 120px;
+}
+
+.card__profile {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  transition: all .25s ease-in;
+  width: 100%;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  padding: 0 2%;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  transition: all .25s ease-in;
+  top: 0;
+  width: 350px;
+}
+
+.card__comment {
+  font-size: 0.2rem;
+  padding: 10% 2%;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  transition: all .25s ease-in;
+  top: 0;
+  width: 300px;
+}
+
+.card__author {
+  opacity: 0;
+  padding: 0 2%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .25s;
+  width: 350px;
+}
+
+.card__author-name {
+  font-weight: 200;
+  text-align: right;
+}
+
+.card__like {
+  color: #ccc;
+  display: block;
+  padding: 80px 0 0 20px;
+  text-align: center;
+  transition: all .35s ease-out;
+  width: 120px;
+}
+
+.card__like--red {
+  color: tomato;
+}
+
+.card--open .card__hidden {
+  height: 250px;
+}
+
+.social {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  font-size: .9rem;
+  margin: 40px 10% 20px;
+  padding: 10px 0;
+  text-align: center;
+  width: 80%;
+}
+
+.social__element {
+  display: inline-block;
+  margin: 0 2em;
+  text-align: center;
+}
+
+.social__number,
+.social__text {
+  font-family: 'Open Sans';
+}
+
+.social__number {
+  font-size: 2.1em;
+  font-weight: 400;
+}
+
+.social__text {
+  color: #888;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.card__follow-btn {
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-family: 'Open Sans';
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 20px 10%;
+  padding: 15px 0;
+  width: 80%;
+}
+
+.card__follow-btn:hover {
+  background-color: tomato;
+  color: white;
+}
+
+.card__follow-btn--following {
+  background-color: tomato;
+  color: white;
+}
+
+.card__follow-btn--following:hover {
+  background-color: red;
+}
+
+.create {
+  margin: 50px auto;
+  max-width: 512px;
+}
+
+.create__form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+}
+
+.create__title {
+  color: tomato;
+  text-align: center;
+}
+
+.create__comment {
+  color: gray;
+  text-align: center;
+}
+
+.create__display_images {
+  clear: both;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.create__profile,
+.create__image {
+  float: left;
+  margin: 0 1%;
+  width: 48%;
+}
+
+.create__img {
+  width: 100%;
+}
+
+.create__label {
+  clear: both;
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  margin: 10px 0;
+}
+
+.create__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 0;
+  border: 1px solid #ccc;
+  line-height: 1em;
+  outline: none;
+
+  font-size: 1em;
+  padding: 15px 1%;
+  width: 97%;
+}
+
+.create__input:focus {
+  border: 1px solid #eee;
+  outline: none;
+}
+
+.create__placeholder {
+  bottom: 19px;
+  color: #aaa;
+  font-size: 1em;
+  left: 5px;
+  line-height: 1em;
+  opacity: 1;
+  position: absolute;
+  transition: all .25s;
+}
+
+.create__input:focus + .create__placeholder {
+  bottom: 40px;
+  color: tomato;
+}
+
+.create__input:valid + .create__placeholder {
+  opacity: 0;
+}
+
+.create__label--select {
+  display: inline-block;
+  float: left;
+  margin-right: 1%;
+  width: 48%;
+}
+
+.create__label--select:nth-child(odd) {
+  margin-left: 1%;
+}
+
+.create__select {
+  width: 100%;
+}
+
+.create__submit {
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 20px 0;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.create__submit:hover {
+  background-color: red;
+}

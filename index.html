@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/fontAwesome.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="assets/js/bootstrap.js"></script>
+  <title>Prueba 08 noviembre</title>
+</head>
+<body>
+
+  <header class="header__main">
+    <h1 class="header__title">Twitter</h1>
+  </header>
+
+  <article class="col-sm-12 col-md-6">
+  <div class="row">
+  <ul class="cards">
+    <li class="card">
+      <div class="card__highlight">
+        <img class="card__img" src="assets/images/squared/04.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <div class="card__profile-container">
+          <img class="card__profile" src="assets/images/profiles/1.jpg" alt="">
+        </div>
+        <a class="card__like" href="#">
+          <i class="fas fa-heart"></i>
+        </a>
+        <div class="card__title">
+          <h2>Tatiana Escudero</h2>
+        </div>
+        <div class="card__comment">
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aspernatur cumque laborum recusandae.</h5>
+        </div>
+        <div class="card__author">
+          <h3 class="card__author-name">Tatiana Escudero</h3>
+        </div>
+        <div class="">
+          <ul class="social">
+            <li class="social__element">
+              <div class="social__number">313</div>
+              <div class="social__text">Likes</div>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </li>
+
+  </ul>
+  </div>
+  </article>
+
+  <article class="col-sm-12 col-md-6">
+  <div class="row">
+  <h2 class="create__title">Agrega tu comentario</h2>
+
+      <div class="create__display_images">
+        <div class="create__image"><img src="assets/images/squared/uk.png" class="create__img"></div>
+        <div class="create__profile"><img src="assets/images/profiles/uk.png" class="create__img"></div>
+
+        <label for="image" class="create__label--select">
+          <select name="image" id="image" class="create__select">
+            <option value="uk.png">Seleccione una Imagen</option>
+            <option value="01.jpg">imagen 01</option>
+            <option value="02.jpg">imagen 02</option>
+            <option value="03.jpg">imagen 03</option>
+            <option value="04.jpg">imagen 04</option>
+          </select>
+        </label>
+
+        <label for="author" class="create__label--select">
+          <select name="author" id="author" class="create__select">
+            <option value="uk.png">Seleccione un Autor</option>
+            <option value="1.jpg">Hombre</option>
+            <option value="2.jpg">Mujer</option>
+            <option value="3.jpg">Niña</option>
+            <option value="4.jpg">Niño</option>
+          </select>
+        </label>
+
+      </div>
+
+    <form action="#" class="create__form" autocomplete="off">
+      <label for="name" class="create__label">
+        <input type="text" name="name" class="create__input" id="name" required>
+        <span class="create__placeholder">Título</span>
+      </label>
+
+      <label for="name" class="create__label">
+        <input type="text" name="comment" class="create__input" id="comment" required>
+        <span class="create__placeholder">Comentario</span>
+      </label>
+
+      <label for="likes" class="create__label">
+        <input type="text" name="likes" class="create__input" id="likes" required>
+        <span class="create__placeholder">Likes</span>
+      </label>
+
+      <input type="submit" value="Agregar" class="create__submit">
+    </form>
+</div>
+      </article>
+
+  <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/javascript.js"></script>
+
+</body>
+</html>
